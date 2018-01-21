@@ -1,0 +1,78 @@
+.Wrap-header {
+    width: @full;
+    .flexbox;
+    .flex-direction(row);
+    .justify-content(space-between);
+
+    &-button {
+        margin-right: 50px;
+    }
+}
+
+.Wrap-main {
+    .flexbox;
+    .flex-direction(row);
+    margin: 30px 50px;
+
+    @media @mobile_xs {
+        .flex-direction(column);
+        margin: 10px;
+    }
+}    
+
+.Wrap-contentRow {
+    .flexbox;
+    .flex-direction(row);
+}
+
+.Wrap-contentColumn {
+    .flexbox;
+    .flex-direction(column);
+}
+
+.Wrap-advertisment {
+    .flexbox;
+    .flex-direction(column);   
+    margin: 5px;
+
+    @media @mobile_xs {
+            display: none;
+    }
+}
+
+
+.Wrap-cardPhoto {
+    width: auto;
+    border: 1px solid #e1e1e1;
+    .flexbox;
+    .flex-direction(column);
+    .align-items(center);
+    background-color: white;
+    margin: 5px;
+}
+
+.Wrap-cardText {
+    width: auto;
+    background-color: white;
+    border: 1px solid #e1e1e1;
+    .flexbox;
+    .flex-direction(column);
+    margin: 5px;
+}
+
+.Wrap-cardPhotoSmall {
+    .flexbox;
+    .flex-direction(row);
+    align-self: flex-start;
+    margin-left: 10px;
+
+    @media @mobile_xs {
+        align-self: center;
+    }
+}
+
+.Wrap-Yellow {
+    background-color: #fef5ca;
+    box-shadow: 5px 5px 5px -5px #333;
+
+}
